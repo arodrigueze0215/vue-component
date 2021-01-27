@@ -1,7 +1,8 @@
 <template>
   <Select :items="items"
       placeholder="Choose Something" 
-      :multiselect="false"/>
+      :multiselect="false"
+      :isSmall="true"/>
 </template>
 
 <script>
@@ -19,9 +20,9 @@ export default {
   data () {
     return {
       items: [ 
-        {name:'Andres',checked:false, icon:'brain'},
-        {name:'Daniela',checked:false, icon:'ambulance'},
-        {name:'Rafael',checked:false, icon:'box'},
+        {name:'Andres',checked:false},
+        {name:'Daniela',checked:false},
+        {name:'Rafael',checked:false},
 
       ]
     }
